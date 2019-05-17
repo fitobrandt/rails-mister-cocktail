@@ -1,7 +1,22 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "water")
+Ingredient.create(name: "tabasco")
+Ingredient.create(name: "V8")
+Ingredient.create(name: "sugar")
+Ingredient.create(name: "salt")
+Ingredient.create(name: "vodka")
+Cocktail.create(name: "Mojito")
+Cocktail.create(name: "Cuba Libre")
+Dose.create(description: "12 cl",cocktail_id: 1, ingredient_id: 1)
+Dose.create(description: "13 cl",cocktail_id: 1, ingredient_id: 2)
+Dose.create(description: "13 cl",cocktail_id: 1, ingredient_id: 3)
+Dose.create(description: "13 cl",cocktail_id: 1, ingredient_id: 4)
+Dose.create(description: "13 cl",cocktail_id: 1, ingredient_id: 5)
+Dose.create(description: "13 cl",cocktail_id: 1, ingredient_id: 6)
+Dose.create(description: "13 cl",cocktail_id: 2, ingredient_id: 1)
+Dose.create(description: "13 cl",cocktail_id: 2, ingredient_id: 7)
+Dose.create(description: "13 cl",cocktail_id: 2, ingredient_id: 7)
+Dose.create(description: "13 cl",cocktail_id: 2, ingredient_id: 8)
+Dose.create(description: "13 cl",cocktail_id: 2, ingredient_id: 9)

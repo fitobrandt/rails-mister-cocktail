@@ -1,0 +1,23 @@
+<% images = [] %>
+<% images << "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"  %>
+ <% images << "https://images.unsplash.com/photo-1523905491727-d82018a34d75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" %>
+ <% images << "https://images.unsplash.com/photo-1541975902628-b157a9411603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" %>
+<% images << "https://images.unsplash.com/photo-1461823385004-d7660947a7c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60" %>
+
+
+
+<% c = 0 %>
+
+<div class="container">
+  <h2>My Cocktails</h2>
+  <% @cocktails.each do |cocktail| %>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src=<%= images[c] %>>
+      <% c += 1 %>
+      <div class="card-body">
+        <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %></h5>
+      </div>
+    </div>
+  <% end %>
+  <%= link_to "Add Cocktails", new_cocktail_path(@cocktail),:class => "btn btn-primary" %>
+</div>
